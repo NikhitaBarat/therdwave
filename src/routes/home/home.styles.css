@@ -1,0 +1,29 @@
+.home{
+    color: white;
+    display: flex;
+    padding: 20px;
+}
+img{
+    width: 400px;
+}
+.top-right{
+    padding: 20px;
+    padding-top: 200px !important;
+}
+.text{
+    padding: 20px;
+    font-weight: 300;
+    font-size: 40px;
+}
+.span{
+    font-weight: 700 !important;
+}
+.blockchain {
+    background: #70C0F8;
+    border-radius: 47px;
+    padding: 10px;
+}
+.border{
+    width: 70%;
+    border-bottom: 4px solid #FFFFFF;
+}
