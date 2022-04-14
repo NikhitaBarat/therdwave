@@ -15,11 +15,16 @@ function Home() {
           </div>
         </div>
       </div>
-
-      <div className="text">
+      <hr className="hr-line"/>
+      <div className="text-2">
         <h2>Royalty Marketplace for Creators.</h2>
       </div>
       <Player />
+
+      <hr className="hr-line"/>
+      <div className="abstract-image">
+
+      </div>
     </div>
   );
 }
