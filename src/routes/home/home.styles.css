@@ -1,11 +1,12 @@
+.home-page {
+    padding: 2rem;
+}
+
 .home{
     color: white;
     display: flex;
-    padding: 20px;
 }
-img{
-    width: 400px;
-}
+
 .top-right{
     padding: 20px;
     padding-top: 200px !important;

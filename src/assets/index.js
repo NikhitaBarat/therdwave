@@ -1,0 +1,1 @@
+export { default as ONEREPUBLIC } from './OneRepublic.png'

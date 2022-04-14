@@ -1,0 +1,82 @@
+
+.player-container {
+    background-color: #008cff;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem;
+}
+
+
+.MuiSvgIcon-root {
+    color: grey;
+}
+
+.music-action-button {
+    display: flex;
+    justify-content: center;
+}
+
+.music-action-button * {
+    color: white;
+}
+
+.music-banner img {
+    height: 20rem;
+}
+
+.levels-player-container {
+    width: 70%;
+    padding: 2rem;
+}
+
+.levels-content {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    padding: 0 5px;
+}
+
+.levels-content h1 {
+    font-size: 3rem;
+}
+
+.bid-section {
+    height: 5rem;
+    margin-top: 5rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.music-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.bid-status {
+    background-color: #3f729c;
+    width: 60%;
+    height: 5rem;
+    display: flex;
+    border-radius: 8px;
+}
+
+.bid {
+    width: 50%;
+    padding: 1rem;
+}
+
+.place-bid {
+    width: 30%;
+    height: 3rem;
+    outline: none;
+    border: none;
+    background-color: #6fde89;
+    border-radius: 8px;
+}
+
+.place-bid:hover {
+    transform: scale(1.02);
+}
