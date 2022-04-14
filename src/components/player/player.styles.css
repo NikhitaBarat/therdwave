@@ -1,6 +1,8 @@
 
 .player-container {
-    background-color: #008cff;
+    background: rgba(255, 255, 255, 0.33);
+    box-shadow: 0px 4px 58px 21px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(23px);
     display: flex;
     flex-wrap: wrap;
     padding: 2rem;
@@ -56,11 +58,12 @@
 }
 
 .bid-status {
-    background-color: #3f729c;
+    background: rgba(255, 255, 255, 0.18);
     width: 60%;
     height: 5rem;
     display: flex;
     border-radius: 8px;
+    padding: .5rem 0;
 }
 
 .bid {
@@ -73,10 +76,14 @@
     height: 3rem;
     outline: none;
     border: none;
-    background-color: #6fde89;
+    background: linear-gradient(262.07deg, rgba(0, 255, 133, 0.2) 3.73%, rgba(191, 0, 239, 0.2) 100%), #63E9E0;
     border-radius: 8px;
 }
 
 .place-bid:hover {
     transform: scale(1.02);
+}
+.last-bid-section{
+    border-left: 1px solid white;
+
 }
