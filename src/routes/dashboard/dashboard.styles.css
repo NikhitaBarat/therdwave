@@ -3,3 +3,7 @@
     padding: 2rem;
 }
 
+.records-container {
+    display: flex;
+    flex-direction: column;
+}
