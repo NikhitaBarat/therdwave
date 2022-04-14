@@ -13,6 +13,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: #080C17;
   font-family: 'Poppins', sans-serif;
+  color: white;
 }
 
 code {
