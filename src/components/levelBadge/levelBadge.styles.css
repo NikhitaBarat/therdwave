@@ -1,4 +1,24 @@
-.levelbadge {
-    display: flex;
-    justify-content: space-between;
-}
+    .levelbadge {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        background-color: grey;
+        margin-bottom: 20px;
+        padding: 20px;
+        border-radius: 15px;
+    }
+    
+    .left {
+        display: flex;
+        align-items: center;
+    }
+    
+    .right {
+        display: flex;
+        align-items: center;
+    }
+    
+    .music-banner {
+        width: 40px;
+        margin-left: 20px;
+    }
