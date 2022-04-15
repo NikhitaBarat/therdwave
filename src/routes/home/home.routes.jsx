@@ -1,5 +1,5 @@
 import React from "react";
-import "../home/home.styles.css";
+import "./home.styles.css";
 import album from "../../assets/album.png";
 import { Player } from "../../components";
 function Home() {
@@ -15,15 +15,20 @@ function Home() {
           </div>
         </div>
       </div>
-      <hr className="hr-line"/>
+      <hr className="hr-line" />
       <div className="text-2">
         <h2>Royalty Marketplace for Creators.</h2>
       </div>
       <Player />
 
-      <hr className="hr-line"/>
-      <div className="abstract-image">
+      <hr className="hr-line" />
+      <div className="abstract-image"></div>
 
+      <div className="featuerd-music-section">
+        <h2>Featured Music</h2>
+        <div className="feat-music-container">
+          {/* add the component here */}
+        </div>
       </div>
     </div>
   );
