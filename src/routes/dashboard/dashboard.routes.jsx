@@ -5,6 +5,7 @@ import axios from "../../config/axios";
 
 function Dashboard() {
   const [musicLevels, setmusicLevel] = useState([]);
+  const [showmore, setshowMore] = useState(3)
   useEffect(() => {
     axios
       .get("api/all/music")
@@ -20,10 +21,10 @@ function Dashboard() {
       <Player />
       <hr className="hr-line" />
       <div className="records-container">
-        {musicLevels?.slice(0, 3).map((data) => (
+        {musicLevels?.slice(0, showmore).map((data) => (
           <Levelbadge {...data}/>
         ))}
-        <button className="loadmore">Load More....</button>
+        <button className="loadmore" onClick={() => setshowMore(showmore + 3)}>Load More....</button>
       </div>
       <div className="featuerd-music-section">
         <h2>Featured Music</h2>
