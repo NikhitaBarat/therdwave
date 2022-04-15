@@ -1,4 +1,4 @@
-# Thirdwave
+# Therdwave
 
 ![](https://i.imgur.com/Yk9YEPg.jpg)
 
