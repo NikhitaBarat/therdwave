@@ -9,7 +9,7 @@ function Levelbadge() {
       <div className="left">
         <PlayArrowIcon fontSize="large" />
         <img
-          className="music-banner"
+          className="smallmusic-banner"
           src={
             "https://i.pinimg.com/originals/41/a0/59/41a0593ec5c6562e838f349aba5ae9ef.jpg"
           }
