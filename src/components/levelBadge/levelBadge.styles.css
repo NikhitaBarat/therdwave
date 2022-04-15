@@ -1,26 +1,40 @@
-    .levelbadge {
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-        background: rgba(255, 255, 255, 0.33);
-        box-shadow: 0px 4px 58px 21px rgba(0, 0, 0, 0.25);
-        backdrop-filter: blur(23px);
-        margin-bottom: 20px;
-        padding: 20px;
-        border-radius: 10px;
-    }
-    
-    .left {
-        display: flex;
-        align-items: center;
-    }
-    
-    .right {
-        display: flex;
-        align-items: center;
-    }
-    
-    .smallmusic-banner {
-        width: 40px;
-        margin-left: 20px;
-    }
+.levelbadge {
+  display: flex;
+  justify-content: space-between;
+  width: 60rem;
+  background: rgba(255, 255, 255, 0.33);
+  box-shadow: 0px 4px 58px 21px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(23px);
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  animation: translateX 1s;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+}
+
+.smallmusic-banner {
+  width: 5rem;
+  margin: 0 2rem;
+}
+
+.music-display-content h3{
+    font-weight: normal;
+}
+.music-display-content p {
+    color: #bdbdbd;
+}
+
+.bid-status-badge {
+    width: 20rem;
+    display: flex;
+    flex-wrap: wrap;
+}
