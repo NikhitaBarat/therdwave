@@ -9,6 +9,9 @@ function Dashboard() {
       <hr className="hr-line" />
       <div className="records-container">
         <Levelbadge />
+        <Levelbadge />
+        <Levelbadge />
+        <button className="loadmore">Load More....</button>
       </div>
     </div>
   );
