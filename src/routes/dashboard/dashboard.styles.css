@@ -11,12 +11,12 @@
 }
 
 .loadmore {
-    width: 10rem;
-    height: 3rem;
+    width: 12rem;
+    height: 4rem;
     outline: none;
     border: none;
     background: rgba(76, 76, 76, 0.33);
-    box-shadow: 0px 4px 58px 21px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 58px 21px rgba(74, 74, 74, 0.25);
     backdrop-filter: blur(23px);
     border-radius: 8px;
     font-size: 1.2rem;
@@ -29,4 +29,10 @@
 
 .loadmore:hover {
     transform: scale(1.02);
+}
+
+.loadmore:active {
+    transform: scale(0.8);
+    box-shadow: 0px 4px 58px 21px rgba(19, 19, 19, 0.25);
+
 }
