@@ -1,0 +1,21 @@
+section .spreads {
+    position: fixed;
+    filter: blur(250px);
+    z-index: -2;
+  }
+  
+  section .spreads:nth-child(1) {
+    background-color: #3b59c5;
+    height: 400px;
+    width: 400px;
+    margin-left: 2rem;
+    margin-top: 50rem;
+  }
+  
+  section .spreads:nth-child(2) {
+    background-color: #ba16e7;
+    height: 400px;
+    width: 400px;
+    margin-left: 60rem;
+    margin-top: 5rem;
+  }

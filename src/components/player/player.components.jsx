@@ -20,18 +20,27 @@ function Player() {
           </div>
           <hr />
           <div className="music-action-button">
-            <IconButton>
-              <SkipPreviousIcon fontSize="large" />
-            </IconButton>
-            <IconButton>
-              <PlayArrowIcon fontSize="large" />
-            </IconButton>
-            <IconButton>
-              <SkipNextIcon fontSize="large" />
-            </IconButton>
-            <IconButton>
-              <FavoriteBorderOutlinedIcon fontSize="small" />
-            </IconButton>
+
+
+            <div className="adjust-div"></div>
+
+            <div className="center-action-btn">
+              <IconButton>
+                <SkipPreviousIcon fontSize="large" />
+              </IconButton>
+              <IconButton>
+                <PlayArrowIcon fontSize="large" />
+              </IconButton>
+              <IconButton>
+                <SkipNextIcon fontSize="large" />
+              </IconButton>
+            </div>
+            
+            <div className="like-btn">
+              <IconButton>
+                <FavoriteBorderOutlinedIcon fontSize="small" />
+              </IconButton>
+            </div>
           </div>
 
           <div className="bid-section">

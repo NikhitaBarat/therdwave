@@ -1,48 +1,63 @@
 .home-page {
-    padding: 2rem;
+  padding: 2rem;
 }
 
-.home{
-    color: white;
-    display: flex;
-    margin-bottom: 2rem;
+.home {
+  color: white;
+  display: flex;
+  margin-bottom: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-.top-right{
-    padding: 20px;
-    padding-top: 200px !important;
+.top-right {
+  padding: 4rem;
+  padding-top: 200px !important;
 }
-.text{
-    font-weight: 300;
-    font-size: 40px;
+.text {
+  font-weight: 300;
+  font-size: 40px;
 }
-.text-2{
-    text-align: center;
-    margin: 4rem 0;
-    font-size: 2.5rem;
+.text-2 {
+  text-align: center;
+  margin: 4rem 0;
+  font-size: 2.5rem;
 }
-.text-2 h2{
-    font-weight: 400;
+.text-2 h2 {
+  font-weight: 400;
 }
-.span{
-    font-weight: 700 !important;
+.span {
+  font-weight: 700 !important;
 }
 .blockchain {
-    background: #70C0F8;
-    border-radius: 47px;
-    padding: 10px;
+  background: #70c0f8;
+  border-radius: 47px;
+  padding: 10px;
+  color: black;
+  font-weight: 600;
 }
-.border{
-    width: 70%;
-    border-bottom: 4px solid #FFFFFF;
+.border {
+  width: 70%;
+  border-bottom: 4px solid #ffffff;
 }
-.hr-line{
-    margin: 2rem 0;
-    border: 2px solid white;
+.hr-line {
+  margin: 2rem 0;
+  border: 2px solid white;
 }
-.abstract-image{
-    height: 15rem;
-    background: url('../../assets/abstract.png');
-    border-radius: 10px;
-    background-size: cover;
+.abstract-image {
+  height: 15rem;
+  background: url("../../assets/abstract.png");
+  border-radius: 10px;
+  background-size: cover;
+}
+
+
+
+.featuerd-music-section {
+    margin-top: 10rem;
+    text-align: center;
+}
+.featuerd-music-section h2 {
+    font-weight: 400;
+    font-size: 3.5rem;
 }
