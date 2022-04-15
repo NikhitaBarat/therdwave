@@ -19,3 +19,14 @@ section .spreads {
     margin-left: 60rem;
     margin-top: 5rem;
   }
+
+  @keyframes translateX {
+    from{
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    to{
+      opacity: 1;
+      transform: translatex(0px);
+    }
+  }
