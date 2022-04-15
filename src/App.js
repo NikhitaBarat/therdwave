@@ -6,6 +6,10 @@ import { Routes, Route } from 'react-router-dom'
 function App() {
   return (
     <div className="App">
+      <section>
+          <div className='spreads'></div>
+          <div className='spreads'></div>
+      </section>
       <Header/>
       <Routes>
         <Route path='/' element={<Home />} />
