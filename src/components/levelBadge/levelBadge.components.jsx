@@ -2,7 +2,6 @@ import React from "react";
 import "./levelBadge.styles.css";
 import PlayArrowIcon from "@mui/icons-material/PlayArrow";
 import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
-import { IconButton } from "@mui/material";
 
 function Levelbadge() {
   return (
