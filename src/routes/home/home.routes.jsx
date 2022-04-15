@@ -1,7 +1,7 @@
 import React from "react";
 import "./home.styles.css";
 import album from "../../assets/album.png";
-import { Player } from "../../components";
+import { Player, Featured } from "../../components";
 function Home() {
   return (
     <div className="home-page">
@@ -27,7 +27,7 @@ function Home() {
       <div className="featuerd-music-section">
         <h2>Featured Music</h2>
         <div className="feat-music-container">
-          {/* add the component here */}
+          <Featured />
         </div>
       </div>
     </div>
