@@ -1,15 +1,23 @@
 # Thirdwave
 
-## Idea
+![](https://i.imgur.com/Yk9YEPg.jpg)
+
+### Tech Stack Used
+
+- ReactJs
+- NodeJs
+- Express
+- MongoDB
+- Prisma
+
+<!-- ### Idea
+
+### Motivation
 
 
-## Motivation
+### Features
+ -->
 
-
-## Features
-
-
-## Tech Stack
 
 
 
