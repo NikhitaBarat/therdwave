@@ -1,29 +1,33 @@
 header {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    z-index: 100;
-    padding: 20px;
+    align-items: center;
     color: white;
-    padding-bottom: 30px !important;
+    padding: 4rem;
+
 }
 
-.header_icon {
-    object-fit: contain;
+.navigation-option .MuiSvgIcon-root {
+    color: white;
 }
 
-.MuiSvgIcon-root {
-    margin: 0 1rem;
+.logo-container img {
+    height: 2rem;
 }
 
-.title {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
+.navigation-option ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
 }
 
+.navigation-option li {
+    font-size: 1.2rem;
+    margin: 0 3rem;
+    cursor: pointer;
+}
 
-.rest {
-    font-size: 20px;
-    line-height: 81.5%;
+.navigation-option a {
+    text-decoration: none;
+    color: white;
 }
