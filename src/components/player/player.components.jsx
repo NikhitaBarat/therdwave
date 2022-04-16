@@ -20,8 +20,6 @@ function Player() {
           </div>
           <hr />
           <div className="music-action-button">
-
-
             <div className="adjust-div"></div>
 
             <div className="center-action-btn">
