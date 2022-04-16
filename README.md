@@ -9,6 +9,7 @@
 - Express
 - MongoDB
 - Prisma
+- Deso
 
 <!-- 
 ### Idea
