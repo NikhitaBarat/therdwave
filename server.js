@@ -35,9 +35,9 @@ DatabaseConnection()
 
 
 // app routes
-app.get('/', (req, res) => {
-    res.status(200).send('Server is Running')
-})
+// app.get('/', (req, res) => {
+//     res.status(200).send('Server is Running')
+// })
 
 app.use('/api', router)
 
