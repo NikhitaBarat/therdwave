@@ -59,8 +59,7 @@ function Header() {
               onClick={isnotAuth ? LoginDeso : logoutDeso}
               fontSize="medium"
               className="header_icon"
-            />
-            
+            />           
           </li>
         </ul>
       </div>
