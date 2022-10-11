@@ -19,6 +19,12 @@ contract ERC721 {
     // will inherit from IERC721
     event Transfer(address from, address to, uint256 tokenId);
 
+    event Approval(
+        address indexed owner,
+        address indexed approved,
+        uint256 indexed tokenId
+    );
+
     // Mapping token ID to owner address
     mapping(uint256 => address) private _tokenOwner;
 
@@ -27,6 +33,7 @@ contract ERC721 {
     mapping(address => uint256) private _OwnedTokensCount;
 
     // Mapping from token Id to approved address
+    mapping(uint256 => address) private _tokenApprovals;
     /*
      * Requirements:
      *
@@ -63,8 +70,11 @@ contract ERC721 {
     ///  function throws for queries about the zero address.
     /// @param _owner An address for whom to query the balance
     /// @return The number of NFTs owned by `_owner`, possibly zero
-    function balanceOf(address _owner) public view returns (uint256){
-        require(_owner != address(0), "ERC721: address zero is not a valid owner");
+    function balanceOf(address _owner) public view returns (uint256) {
+        require(
+            _owner != address(0),
+            "ERC721: address zero is not a valid owner"
+        );
         return _OwnedTokensCount[_owner];
     }
 
@@ -73,14 +83,66 @@ contract ERC721 {
     ///  about them do throw.
     /// @param _tokenId The identifier for an NFT
     /// @return The address of the owner of the NFT
-    function ownerOf(uint256 _tokenId) public view returns (address){
+    function ownerOf(uint256 _tokenId) public view returns (address) {
         address owner = _ownerOf(_tokenId);
-        require(owner != address(0),  "ERC721: invalid token ID");
+        require(owner != address(0), "ERC721: invalid token ID");
         return owner;
     }
 
-
-    function _ownerOf(uint256 _tokenId) internal view virtual returns(address){
+    function _ownerOf(uint256 _tokenId)
+        internal
+        view
+        virtual
+        returns (address)
+    {
         return _tokenOwner[_tokenId];
     }
+
+    function transferFrom(
+        address _from,
+        address _to,
+        uint256 _tokenId
+    ) public {
+        _transferFrom(_from, _to, _tokenId);
+    }
+
+    function _transferFrom(
+        address _from,
+        address _to,
+        uint256 _tokenId
+    ) internal {
+        require(
+            _to != address(0),
+            "Error - ERC721 Transfer to the zero address"
+        );
+        require(
+            ownerOf(_tokenId) == _from,
+            "Trying to transfer a token the does not exist"
+        );
+
+        _OwnedTokensCount[_from] -= 1;
+        _OwnedTokensCount[_to] += 1;
+
+        _tokenOwner[_tokenId] = _to;
+        emit Transfer(_from, _to, _tokenId);
+    }
+
+    // person approving is the owner 
+    // approve an address  to a token (tokenId)
+    // require that we can't approve sending tokens of the owner to the owner
+    // update the map of the approval addresses
+    function approve(address _to, uint256 _tokenId) public {
+        address owner = _ownerOf(_tokenId);
+        require(_to != owner, "Error - approval to current owner");
+        require(msg.sender == owner, 'Current caller is not the owner');
+        _tokenApprovals[_tokenId] = _to;
+
+        emit Approval(owner, _to, _tokenId);
+    }
+
+    // function isApprovedOrOwner(address _spender,  uint256 _tokenId) internal view returns(bool) {
+    //     require(_exists(_tokenId), 'token does not exist');
+    //     address owner = ownerOf(_tokenId);
+    //     // require(_spender == owner || getApproved(_tokenId) == spender);
+    // }
 }
