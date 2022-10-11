@@ -33,7 +33,7 @@ contract ERC721 {
      * - `tokenId` must not exist.
      * - `to` cannot be the zero address.
      */
-    function _mint(address to, uint256 tokenId) internal {
+    function _mint(address to, uint256 tokenId) internal virtual {
         // requires that the address isn't zero
         require(to != address(0), "ERC721: mint to the zero address");
 
