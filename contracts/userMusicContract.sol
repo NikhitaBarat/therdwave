@@ -5,3 +5,4 @@ contract userMusicContract {
   constructor() public {
   }
 }
+
